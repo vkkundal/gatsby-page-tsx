@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { StaticImage } from "gatsby-plugin-image"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Link } from "gatsby"
-import styles from "../styles/header.module.css"
+import styles from "../styles/global.css"
 
 
 const Header = ({ siteTitle, children }) => (
@@ -15,16 +15,27 @@ const Header = ({ siteTitle, children }) => (
       alt="A Gatsby astronaut"      
     />
     </div>
-    <div class="col">
+   <div class="col">
+   <div className="row-flex">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <Link class="nav-link active navbarlink" aria-current="page" href="#">Home</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <Link class="nav-link active" aria-current="page" href="#">Page</Link>
+        </li>        
+        <li class="nav-item">
+          <Link class="nav-link active" aria-current="page" href="#">Portfolio</Link>
+        </li>        
+        <li class="nav-item">
+          <Link class="nav-link active" aria-current="page" href="#">Blog</Link>
+        </li>        
+        <li class="nav-item">
+          <Link class="nav-link active" aria-current="page" href="#">Shop</Link>
         </li>        
       </ul>
     </div>
+   </div>
     <div class="col">
       3 of 3
     </div>

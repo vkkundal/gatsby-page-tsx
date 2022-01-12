@@ -5,3 +5,8 @@
     padding-left: 0;
     list-style: none;
 }
+.nav-item .navbarlink {
+  padding-right: 0;
+  padding-left: 28px;
+  text-align: center;
+}
