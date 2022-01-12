@@ -1,0 +1,7 @@
+.rowstyle {
+    display: flex;
+  }
+.header-col ul {
+    padding-left: 0;
+    list-style: none;
+}
